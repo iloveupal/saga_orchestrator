@@ -1,6 +1,6 @@
 # saga_orchestrator
 
-The api and examples are not finalized, this is just WIP
+The api and examples are not finalized, nor it's not ready to be imported, this is just WIP
 
 ## The purpose
 
@@ -47,3 +47,9 @@ orderAcceptedInputNode.addNext(...) // add other nodes to each other until you g
 root.feed({ name: 'create_order', args: [{ userId: 'abc', from: Location, to: Location, suggestedPrice: 300 }] })
 ```
 
+## Todo
+
+1. Finalize the persistence protocol and serialization
+2. Create more node types, like `map`, `oneOf` and `timeOut`
+3. Add serialization to the graph configuration so that it can be restarted or dynamically obtained
+4. See if this approach even makes sense in real life :D
