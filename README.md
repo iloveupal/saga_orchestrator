@@ -53,3 +53,5 @@ root.feed({ name: 'create_order', args: [{ userId: 'abc', from: Location, to: Lo
 2. Create more node types, like `map`, `oneOf` and `timeOut`
 3. Add serialization to the graph configuration so that it can be restarted or dynamically obtained
 4. See if this approach even makes sense in real life :D
+5. Implement failure logic for async actions
+6. Enqueue events instead of launching a separate execution context for each one of them
