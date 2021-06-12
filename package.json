@@ -4,9 +4,18 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "@jest/globals": "^27.0.3",
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
     "jest": "^27.0.4"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "debugtest": "node --inspect-brk node_modules/.bin/jest --runInBand"
+  },
+  "dependencies": {
+    "is-promise": "^4.0.0",
+    "uuid": "^8.3.2"
   }
 }
